@@ -1,192 +1,327 @@
 <!doctype html5>
 <html lang="en-US">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- ToDo: Provide summary of the web page, including one or two keywords. -->
-    <meta name="description" content="...">
+        <!-- ToDo: Provide summary of the web page, including one or two keywords. -->
+        <meta name="description" content="...">
 
-    <!-- ToDo: Provide a title -->
-    <title>...</title>
+        <!-- ToDo: Provide a title -->
+        <title>Digital Services | Southeast Community Development Corporation</title>
 
-    <!-- Bootstrap css classess -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <!-- Bootstrap css classess -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <!-- Google Fonts: https://fonts.google.com/specimen/Oswald?query=Oswald -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    
-    <!-- Customized styles -->
-    <style>
-        /* SCDC's website reference font */
-        body {
-            font-family: "Roboto Mono", Helvetica, Arial, Lucida, sans-serif;
-            font-size: 20px;
-        }
-
-        .uppercase {
-            text-transform: uppercase;
-        }
-
-        h1 {
-            font-family: "Oswald", Helvetica, Arial, Lucida, sans-serif;
-            font-size: 69px;
-        }
-        h2 {
-            font-size: 24px;
-        }
-
-        /* SCDC brand colors */
-
-        .text-scdc {
-            color: #E09900;
-        }
-
-        .bg-scdc {
-            background-color: #E09900;
-        }
-
-    </style>
-</head>
-<body>
-    <!-- ToDo: Replace the HTML and content below with the content of your mockup -->
-    <main class="container-page">
-        <h1 class="text-white bg-dark">Digital Services</h1>      
-            <section>
-                <p>
-                      We provide low-cost digital services for the success of entrepreneurs in the region. We encourage local and small business owners and entrepreneurs in need of expertise in digital services and training to fill out a virtual interest form.
-                </p>
+        <!-- Google Fonts: https://fonts.google.com/specimen/Oswald?query=Oswald -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href='https://fonts.googleapis.com/css2?family=Roboto Mono' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
         
+        <!-- Customized styles -->
+        <style>
+            body {
+                font-family: "Roboto Mono", sans-serif;
+                font-size: 20px;
+                color: black;
+            }
+
+            h1 {
+                font-family: "Oswald", Helvetica, Arial, Lucida, sans-serif;
+                font-size: 69px;
+                margin-top: 15px;
+                padding-top: 5px;
+                padding-bottom: 10px;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            h2 {
+                font-size: 22px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                padding-left: 10px;
+                padding-right: 10px;
+                font-weight: 600;
+                width: 460px;
+            }
+
+            ul {
+                font-size: 18px;
+            }
+
+            .button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 50px;
+                margin-bottom: 75px;
+            }
+
+            .button-scdc {
+                background-color: #E09900;
+                box-shadow: 10px 10px rgba(0, 0, 0, 0.25);
+                width: 355;
+                height: 55;
+            }
+
+            .bg-scdc {
+                background-color: #EBBD59;
+            }
+
+            .container-page {
+                margin-left: auto;
+                margin-right: auto;
+                border-style: solid;
+                border-width: 1px;
+                margin-top: 10px;
+                height: auto;
+                width: 1090;
+            }
+
+            .container-sections {
+                width: 460px;
+                margin: 10px;
+            }
+
+            .container-testimonial {
+                width: 1060;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .column-sections {
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+            .text-next{
+                margin-top: 10px;
+                padding-top: 5px;
+                padding-bottom: 10px;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            .text-margin {
+                margin-left: 10px;
+                margin-right: 5px;
+            }
+
+            .text-testimonial {
+                display: flex;
+                align-items: center;
+                font-size: 26px;
+                font-weight: 550;
+                margin-left: 25px;
+                margin-right: 5px;
+                margin-top: 10px;
+
+            }
+
+            .sponsor-title {
+                text-align: center;
+                margin:auto;
+                font-size: 24px;
+                font-weight: 550px;
+            }
+
+            .uppercase {
+                text-transform: uppercase;
+            }
+
+            .margin-space {
+                margin-bottom: 50px;
+            }
+
+            .margin-sponsors {
+                margin-bottom: 30px;
+            }
+
+            .sponsor-imgs {
+                margin-left: 25px;
+                margin-right: 20px;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <main class="container-page">
+            <!--Title Section-->
+            <section>
+                <h1 class="text-white bg-black margin-space" style="text-align: right;">Digital Services</h1>      
+                    <div class="margin-space">
+                        <p style="text-align: center;">
+                            We provide low-cost digital services for the success of entrepreneurs in the region. We encourage local and small business owners and entrepreneurs in need of expertise in digital services and training to fill out a virtual interest form.
+                        </p>
+                    </div>
             </section>
 
-                <section>
-                    <h2 class="uppercase">we focus on small business</h2>
-                    <section>
-                        <p>Our services are tailored for small businesses and entrepreneurs in South East Los Angeles.</p>
-                        <ul>
-                            <li>Restaurants</li>
-                            <li>Street Vendors</li>
-                            <li>Salons</li>
-                            <li>Repair Shops</li>
-                            <li>Bakeries</li>
-                            <li>Dry Cleaners</li>
-                            <li>Ice Cream Shops</li>
-                            <li>Offices</li>
-                        </ul>
-                    </section>
-                </section>
-                
-                <section>
-                    <h2 class="uppercase">we're here to help</h2>
-                    <section>
-                        <ul>
-                            <li>Make your business appear more professional.</li>
-                            <li>Attract all kinds of customers.</li>
-                            <li>Stay up to date on technology.</li>
-                            <li>Increases revenue.</li>
-                            <li>Better business analytics.</li>
-                            <li>Brand consistency.</li>
-                            <li>Better visibility of menus.</li>
-                            <li>Promote new items.</li>
-                        </ul>
-                    </section>
-                </section>
-                
-                <section>
-                    <h2 class="uppercase"> what we do</h2>
-                        <p>
-                            Our digital services meet the needs of small businesses and entrepreneurs to establish an online presence.
-                        </p>
-                        <p>
-                            <div>
-                                <p style="font-size: 20px;">Our services provide:</p>
-                            </div>
-                            <ul>
-                            <li>Professional websites</li>
-                            <li>Staff training on digital literacy skills</li>
-                            <li>Digital menus</li>
-                            <li>Local expertise</li>
-                            </ul>
-                        </p>
-                </section>
-                <section>  
-                    <img src="img/what-wedo.png" alt="What we do picture">
-                </section>
-
-                <section>
-                    <h2 class="uppercase"> why choose us</h2>
-                    <p>
-                        By encouraging small businesses and entrepreneurs, we are supporting economic growth and fostering a vibrant community. <br />
-                        <br />
-                        We are dedicated to developing and preparing your business for success.
-                    </p>
-                    <h2 class="uppercase"> where do i start?</h2> 
-                    <p>
-                        To start the process, simply fill out the virtual interest form below and submit it to info@scdcorp.org.
-                    </p>
-
-                </section>
-                <section>
-                    <h1 class="text-white bg-dark"> What's next?</h1> 
-                    <p>
-                        Click on the Virtual Interest Form below to contact us. We will promptly reach out to schedule a free 30-minute consultation conducted in person or virtually.
-                    </p>
-                    <button class="bg-scdc text-white">
-                        Virtual Interest Form >
-                    </button>
-                </section>
-
+            <div class="column-sections">
                 <div>
-                    <img src="img/partnership.png" alt="partnership picture">
-                    <p>
-                        “Their dedication and genuine passion for our growth makes them stand out. If you’re searching for a partner that delivers and truly understands, SCDC is the way to go!”
-                    </p>
-                    <h5> -NewStart Housing Corporation </h5>
+                    <!--Focus Section-->
+                    <section class="container-sections margin-space">
+                        <h2 class="uppercase bg-scdc">We focus on small business</h2>
+                                <div class="text-margin">
+                                    <p>Our services are tailored for small businesses and entrepreneurs in South East Los Angeles.</p>
+                                    <ul>
+                                        <li>Restaurants</li>
+                                        <li>Street Vendors</li>
+                                        <li>Salons</li>
+                                        <li>Repair Shops</li>
+                                        <li>Bakeries</li>
+                                        <li>Dry Cleaners</li>
+                                        <li>Ice Cream Shops</li>
+                                        <li>Offices</li>
+                                    </ul>
+                                </div>
+                    </section>
+                </div>
+                <div>
+                    <!--Help Section-->
+                    <section class="container-sections margin-space">
+                        <div>
+                            <h2 class="uppercase bg-scdc">We're here to help</h2>
+                                <div class="text-margin">
+                                    <ul>
+                                        <li>Make your business appear more professional.</li>
+                                        <li>Attract all kinds of customers.</li>
+                                        <li>Stay up to date on technology.</li>
+                                        <li>Increases revenue.</li>
+                                        <li>Better business analytics.</li>
+                                        <li>Brand consistency.</li>
+                                        <li>Better visibility of menus.</li>
+                                        <li>Promote new items.</li>
+                                    </ul>
+                                </div>
+                    </section>
+                </div>
+            </div>
 
+            <div class="column-sections">
+                <div>
+                    <!--Service Section-->
+                    <section class="container-sections margin-space">
+                        <h2 class="uppercase bg-scdc">What we do</h2>
+                            <div class="text-margin">
+                                <p>
+                                    Our digital services meet the needs of small businesses and entrepreneurs to establish an online presence.
+                                </p>
+                                <div>
+                                    <p style="font-size: 20px;">Our services provide:</p>
+                                    <ul>
+                                    <li>Professional websites</li>
+                                    <li>Staff training on digital literacy skills</li>
+                                    <li>Digital menus</li>
+                                    <li>Local expertise</li>
+                                    </ul>
+                                </div>
+                            </div>          
+                    </section>
+                </div>
+                <div>
+                    <!--Service IMG-->
+                    <section class="container-sections text-margin margin-space" style="margin-top: 20; margin-left: 30;">
+                        <img src="img/what-wedo.png" alt="What we do picture">
+                    </section>
+                </div>
+            </div>
+            
+
+            
+                
+            <div class="column-sections">
+                <div>
+                    
+                    <!--Why Section-->
+                    <section class="container-sections margin-space">
+                        <h2 class="uppercase bg-scdc"> Why choose us</h2>
+                            <p class="text-margin">
+                                By encouraging small businesses and entrepreneurs, we are supporting economic growth and fostering a vibrant community. <br />
+                                <br />
+                                We are dedicated to developing and preparing your business for success.
+                            </p>
+                    </section>
                 </div>
 
-                <section>
-                    <h2> Our Sponsors</h2>
-                    <img src="img/verizon.png" alt="Verizon Logo">
-                    <img src="img/so-cal-gas.png" alt="southern california gas">
-                    <img src="img/wrd.png" alt="wrd picture">
-                    <img src="img/AT&T_logo_2016 1.png" alt="AT&T Logo">
-                    <img src="img/City-of-Bell_Logo 1.png" alt="City of bell">
-                    <img src="img/rotary.png" alt="Rotary picture">
-                    <img src="img/edison.png" alt="edison logo">
-                    <img src="img/kiwanis-international-logo 1.png" alt="Kiwannis picture">
-                    <img src="img/new-start-housing.png" alt="New start housing picture">
-                    <img src="img/janice-Hahn.png" alt="Janice Hahn">
+                <div>
+                    
+                    <!--Where Section-->
+                    <section class="container-sections margin-space">
+                        <h2 class="uppercase bg-scdc"> Where do i start?</h2>
+                            <p class="text-margin">
+                                To start the process, simply fill out the virtual interest form below and submit it to info@scdcorp.org.
+                            </p>
+                    </section>
+                </div>
+            </div>
 
-                </section>
+            <!--Next Section-->
+            <section>
+                <div class="column-sections">
+                    <div>
+                        <h1 class="text-white bg-black" style="width: 385px;"> What's next?</h1>
+                    </div>
+                    <div class="text-next">
+                        <p style="text-align: center;">
+                            Click on the Virtual Interest Form below to contact us. We will promptly reach out to schedule a free 30-minute consultation conducted in person or virtually.
+                        </p>
+                    </div>
+                </div>
 
+                <div class="button">
+                    <button class="text-white button-scdc">
+                        Virtual Interest Form >
+                    </button>
+                </div>
+            </section>
 
+            <!-- Testimonial section -->
+            <section class="container-testimonial margin-space">
+                <div class="column-sections">
+                    <div>
+                        <img src="img/partnership.png" alt="partnership picture">
+                    </div>
+                    <div class="vertical-center">
+                        <p class="text-testimonial">
+                            “Their dedication and genuine passion for our growth makes them stand out. If you’re searching for a partner that delivers and truly understands, SCDC is the way to go!”
+                        </p>
+                        <p style= "font-size: 18px; text-align: right; margin-right: 20px;"> -NewStart Housing Corporation </p>
+                    </div>
+                </div>
+            </section>
 
-
-
-
-
-    <h1 class="text-center mt-3 my-3">Southeast Community Development Corporation (SCDC)</h1>
-    <h2 class="text-center mb-5">Digital Services</h1>
-
-    <main class="container">
-        <h1 class="text-white bg-dark">Digital Services</h1>
-        <h3>Color Schemes:</h3>
-
-        <p>Regular text</p>
-
-        <p class="uppercase">Uppercase text</p>
-
-        <p class="text-white bg-dark">Black background and white text</p>
-
-        <p class="text-white bg-dark uppercase">Black background and uppercase white text</p>
-
-        <p class="text-scdc">White background and orange text </p>
-
-        <p class="bg-scdc text-white">Orange background and white text </p>
-    </main>
-    
-</body>
+            <!-- Sponsor section -->
+            <section>
+                    <h2 class="margin-sponsors sponsor-title"> Our Sponsors</h2>
+                    <div class="sponsor-imgs">
+                        <div class="margin-sponsors container">
+                            <div class="row">
+                                <div class="col-sm"><img src="img/verizon.png" alt="Verizon Logo"></div>
+                                <div class="col-sm"><img src="img/so-cal-gas.png" alt="southern california gas"></div> 
+                                <div class="col-sm"><img src="img/wrd.png" alt="wrd picture"></div>
+                                <div class="col-sm"><img src="img/AT&T_logo_2016 1.png" alt="AT&T Logo"></div>
+                            </div>
+                        </div>
+                        <div class="margin-sponsors container">
+                            <div class="row">
+                                <div class="col-sm"><img src="img/City-of-Bell_Logo 1.png" alt="City of bell"></div>
+                                <div class="col-sm"><img src="img/rotary.png" alt="Rotary picture"></div>
+                                <div class="col-sm"><img src="img/edison.png" alt="edison logo"></div>
+                                <div class="col-sm"><img src="img/kiwanis-international-logo 1.png" alt="Kiwannis picture"></div>
+                            </div>
+                        </div>
+                        <div class="margin-sponsors container">
+                            <div class="row justify-content-between">
+                                <div class="col-md-1 offset-md-1"><img src="img/new-start-housing.png" alt="New start housing picture"></div>
+                                <div class="col-6"><img src="img/janice-Hahn.png" alt="Janice Hahn"></div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        </main>
+    </body>
 </html>
