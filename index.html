@@ -1,351 +1,262 @@
 <!doctype html5>
 <html lang="en-US">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- ToDo: Provide summary of the web page, including one or two keywords. -->
-        <meta name="description" content="...">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- ToDo: Provide a title -->
-        <title>Digital Services | Southeast Community Development Corporation</title>
+    <!-- ToDo: Provide summary of the web page, including one or two keywords. -->
+    <meta name="description" content="...">
 
-        <!-- Bootstrap css classess -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- ToDo: Provide a title -->
+    <title>Digital Services | Southeast Community Development Corporation</title>
 
-        <!-- Google Fonts: https://fonts.google.com/specimen/Oswald?query=Oswald -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Bootstrap css classess -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Google Fonts: https://fonts.google.com/specimen/Oswald?query=Oswald -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- 
         <link href='https://fonts.googleapis.com/css2?family=Roboto Mono' rel='stylesheet'>
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-        
-        <!-- Customized styles -->
-        <style>
-            body {
-                font-family: "Roboto Mono", sans-serif;
-                font-size: 20px;
-                color: black;
-            }
+        -->
+    <!-- JO: Use HTML code suggested by fonts.google.com (https://fonts.google.com/selection?query=Roboto+Mono): -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
 
-            h1 {
-                font-family: "Oswald", Helvetica, Arial, Lucida, sans-serif;
-                font-size: 69px;
-                margin-top: 15px;
-                padding-top: 5px;
-                padding-bottom: 10px;
-                padding-left: 15px;
-                padding-right: 15px;
-            }
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    
+    <!--Bootstrap Icon Import-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-            h2 {
-                font-size: 22px;
-                padding-top: 5px;
-                padding-bottom: 5px;
-                padding-left: 10px;
-                padding-right: 10px;
-                font-weight: 600;
-                width: 460px;
-            }
+    <!-- Customized styles -->
+    <!-- JO: Your HTML document already includes the Bootstrap CSS framework. You should try using the framework classes (e.g., for padding, margin, sizing, etc.) before writing custom CSS. -->
+    <style>
+        body {
+            /* JO: Use property value suggested by fonts.google.com: */
+            /* font-family: "Roboto Mono", sans-serif; */
+            font-family: "Roboto Mono", monospace;
+        }
 
-            ul {
-                font-size: 18px;
-            }
+        h1 {
+            font-family: "Oswald", Helvetica, Arial, Lucida, sans-serif;
+        }
 
-            .button {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin-top: 50px;
-                margin-bottom: 75px;
-            }
+        .button-scdc {
+            background-color: #E09900;
+            box-shadow: 10px 10px rgba(0, 0, 0, 0.25);
+            width: 355;
+            height: 55;
+        }
 
-            .button-scdc {
-                background-color: #E09900;
-                box-shadow: 10px 10px rgba(0, 0, 0, 0.25);
-                width: 355;
-                height: 55;
-            }
+        .bg-scdc {
+            background-color: #EBBD59;
+        }
 
-            .bg-scdc {
-                background-color: #EBBD59;
-            }
+        .uppercase {
+            text-transform: uppercase;
+        }
+    </style>
+</head>
 
-            .container-page {
-                margin-left: auto;
-                margin-right: auto;
-                border-style: solid;
-                border-width: 1px;
-                margin-top: 10px;
-                height: auto;
-                width: 1090;
-            }
+<body class="text-black">
+    <header class="container mb-5 p-0">
+        <!--Title Section -->
+        <!-- JO: Remove all inline CSS -->
+        <!-- JO: Use Bootstrap classes as much as you can before writing your own CSS rules -->
+        <h1 class="text-white bg-black text-end display-1 fw-medium py-2 pe-3">Digital Services</h1>
+        <p class="text-center lead p-4">
+            We provide low-cost digital services for the success of entrepreneurs in the region. We encourage
+            local and small business owners and entrepreneurs in need of expertise in digital services and
+            training to fill out a virtual interest form.
+        </p>
+    </header>
 
-            .container-sections {
-                position: relative;
-                width: 460px;
-                margin: 10px;
-            }
+    <!-- JO: Implement Bootstrap's grid system: container -> row -> col. Use the lg (large) breakpoint -->
+    <!-- <div class="column-sections"> -->
+    <main class="container mb-5 px-3">
+        <div class="row mb-5  pb-1">
+            <!--Focus Section-->
+            <section class="col-lg-6 px-5">
+                <div class="bg-scdc d-flex justify-content-between p-1 mb-2">
+                    <!-- m-1 creates enough vertical space to align the heading to the middle -->
+                    <h2 class="uppercase fw-medium fs-4 m-1">
+                        We focus on small business
+                    </h2>
+                    <!-- Showing the icon correctly on smaller devices may take some additional work. A workaround is just to hide the image. -->
+                    <i class="bi bi-shop d-none d-lg-block my-1 me-1" style="font-size: 2rem;"></i>
+                </div>
+                <div class="ms-2 me-1">
+                    <p>
+                        Our services are tailored for small businesses and entrepreneurs in South East Los
+                        Angeles.
+                    </p>
+                    <ul class="fs-6">
+                        <li>Restaurants</li>
+                        <li>Street Vendors</li>
+                        <li>Salons</li>
+                        <li>Repair Shops</li>
+                        <li>Bakeries</li>
+                        <li>Dry Cleaners</li>
+                        <li>Ice Cream Shops</li>
+                        <li>Offices</li>
+                    </ul>
+                </div>
+            </section>
+            <!--Help Section-->
+            <section class="col-lg-6 px-5">
+                <div class="d-flex justify-content-between bg-scdc p-1 mb-2">
+                    <h2 class="uppercase bg-scdc fw-medium fs-4 m-1">
+                        We're here to help
+                    </h2>
+                    <i class="bi bi-person-heart d-none d-lg-block my-1 me-1" style="font-size: 2rem;"></i>
+                </div>
+                <div class="ms-2 me-1">
+                    <ul class="fs-6">
+                        <li>Make your business appear more professional.</li>
+                        <li>Attract all kinds of customers.</li>
+                        <li>Stay up to date on technology.</li>
+                        <li>Increases revenue.</li>
+                        <li>Better business analytics.</li>
+                        <li>Brand consistency.</li>
+                        <li>Better visibility of menus.</li>
+                        <li>Promote new items.</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <!-- JO: Expand the main tag to include the remaining 'main' content below-->
 
-            .container-testimonial {
-                width: 1060;
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            .column-sections {
-                display: flex;
-                justify-content: space-evenly;
-            }
-
-            .text-next{
-                margin-top: 10px;
-                padding-top: 5px;
-                padding-bottom: 10px;
-                padding-left: 15px;
-                padding-right: 15px;
-            }
-
-            .text-margin {
-                margin-left: 10px;
-                margin-right: 5px;
-            }
-
-            .text-testimonial {
-                display: flex;
-                align-items: center;
-                font-size: 26px;
-                font-weight: 550;
-                margin-left: 25px;
-                margin-right: 5px;
-                margin-top: 10px;
-
-            }
-
-            .sponsor-title {
-                text-align: center;
-                margin:auto;
-                font-size: 24px;
-                font-weight: 550px;
-            }
-
-            .uppercase {
-                text-transform: uppercase;
-            }
-
-            .margin-space {
-                margin-bottom: 50px;
-            }
-
-            .margin-sponsors {
-                margin-bottom: 30px;
-            }
-
-            .sponsor-imgs {
-                margin-left: 25px;
-                margin-right: 20px;
-            }
-
-            .icons {
-                position: absolute;
-                top: 5px;
-                right: 7px;
-            }
-
-
-        </style>
-    </head>
-
-    <body>
-        <main class="container-page">
-            <!--Title Section-->
-            <section>
-                <h1 class="text-white bg-black margin-space" style="text-align: right;">Digital Services</h1>      
-                    <div class="margin-space">
-                        <p style="text-align: center;">
-                            We provide low-cost digital services for the success of entrepreneurs in the region. We encourage local and small business owners and entrepreneurs in need of expertise in digital services and training to fill out a virtual interest form.
+        <div class="row mb-5  pb-1">
+            <!--Service Section-->
+            <section class="col-lg-6 px-5">
+                <div class="bg-scdc d-flex justify-content-between p-1 mb-2">
+                    <!-- m-1 creates enough vertical space to align the heading to the middle -->
+                    <h2 class="uppercase fw-medium fs-4 m-1">
+                        What we do
+                    </h2>
+                    <!-- Showing the icon correctly on smaller devices may take some additional work. A workaround is just to hide the image. -->
+                    <i class="bi bi-globe-americas d-none d-lg-block my-1 me-1" style="font-size: 2rem;"></i>
+                </div>
+                <div class="ms-2 me-1">
+                    <p>
+                        Our digital services meet the needs of small businesses and entrepreneurs to establish an online presence.
+                    </p>
+                    <div>
+                        <p>
+                            Our services provide:
                         </p>
+                        <ul class="fs-6">
+                            <li>Professional websites</li>
+                            <li>Staff training on digital literacy skills</li>
+                            <li>Digital menus</li>
+                            <li>Local expertise</li>
+                            </ul>
                     </div>
+                </div>
             </section>
 
-            <div class="column-sections">
-                <div>
-                    <!--Focus Section-->
-                    <section class="container-sections margin-space">
-                        <div class="icons">
-                            <img src="img/shop.svg" alt="shop icon" width="26">
-                        </div>
-                        <h2 class="uppercase bg-scdc">We focus on small business</h2>
-                                <div class="text-margin">
-                                    <p>Our services are tailored for small businesses and entrepreneurs in South East Los Angeles.</p>
-                                    <ul>
-                                        <li>Restaurants</li>
-                                        <li>Street Vendors</li>
-                                        <li>Salons</li>
-                                        <li>Repair Shops</li>
-                                        <li>Bakeries</li>
-                                        <li>Dry Cleaners</li>
-                                        <li>Ice Cream Shops</li>
-                                        <li>Offices</li>
-                                    </ul>
-                                </div>
-                    </section>
+            <!--Service IMG-->
+            <section class="col-lg-6 px-5">
+                <div class="ms-2 me-1">
+                    <img class="ms-3" src="img/what-wedo.png" alt="What we do picture">
                 </div>
-                <div>
-                    <!--Help Section-->
-                    <section class="container-sections margin-space">
-                        <div>
-                            <div class="icons">
-                                <img src="img/person-heart.svg" alt="shop icon" width="26">
-                            </div>
-                            <h2 class="uppercase bg-scdc">We're here to help</h2>
-                                <div class="text-margin">
-                                    <ul>
-                                        <li>Make your business appear more professional.</li>
-                                        <li>Attract all kinds of customers.</li>
-                                        <li>Stay up to date on technology.</li>
-                                        <li>Increases revenue.</li>
-                                        <li>Better business analytics.</li>
-                                        <li>Brand consistency.</li>
-                                        <li>Better visibility of menus.</li>
-                                        <li>Promote new items.</li>
-                                    </ul>
-                                </div>
-                    </section>
+            </section>
+        </div>
+
+        <div class="row mb-5  pb-1">
+            <!--Why Section-->
+            <section class="col-lg-6 px-5">
+                <div class="bg-scdc d-flex justify-content-between p-1 mb-2">
+                    <!-- m-1 creates enough vertical space to align the heading to the middle -->
+                    <h2 class="uppercase fw-medium fs-4 m-1">
+                        Why choose us
+                    </h2>
+                    <!-- Showing the icon correctly on smaller devices may take some additional work. A workaround is just to hide the image. -->
+                    <i class="bi bi-rocket-takeoff d-none d-lg-block my-1 me-1" style="font-size: 2rem;"></i>
+                </div>
+                <div class="ms-2 me-1">
+                    <p>
+                        By encouraging small businesses and entrepreneurs, we are supporting economic growth and fostering a vibrant community. <br />
+                        <br />
+                        We are dedicated to developing and preparing your business for success.
+                    </p>
+                </div>
+            </section>
+
+            <!--Where Section-->
+            <section class="col-lg-6 px-5">
+                <div class="bg-scdc d-flex justify-content-between p-1 mb-2">
+                    <!-- m-1 creates enough vertical space to align the heading to the middle -->
+                    <h2 class="uppercase fw-medium fs-4 m-1">
+                        Where do I start?
+                    </h2>
+                    <!-- Showing the icon correctly on smaller devices may take some additional work. A workaround is just to hide the image. -->
+                    <i class="bi bi-envelope-arrow-up d-none d-lg-block my-1 me-1" style="font-size: 2rem;"></i>
+                </div>
+                <div class="ms-2 me-1">
+                    <p>
+                        To start the process, simply fill out the virtual interest form below and submit it to info@scdcorp.org.
+                    </p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!--Next Section-->
+    <section>
+        <div class="container mb-5 pb-1">
+            <div class="row mb-5">
+                <div class="col-lg-4">
+                    <h1 class="text-white bg-black display-1 fw-medium py-2 ps-3" style="width: 435px"> What's next?</h1>
+                </div>
+                <div class="col-lg-8">
+                    <p class="ms-3 my-4" style="text-align: center;">
+                        Click on the Virtual Interest Form below to contact us. We will promptly reach out to schedule a free 30-minute consultation conducted in person or virtually.
+                    </p>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="column-sections">
-                <div>
-                    <!--Service Section-->
-                    <section class="container-sections margin-space">
-                        <div class="icons">
-                            <img src="img/globe-americas.svg" alt="shop icon" width="26">
-                        </div>
-                        <h2 class="uppercase bg-scdc">What we do</h2>
-                            <div class="text-margin">
-                                <p>
-                                    Our digital services meet the needs of small businesses and entrepreneurs to establish an online presence.
-                                </p>
-                                <div>
-                                    <p style="font-size: 20px;">Our services provide:</p>
-                                    <ul>
-                                    <li>Professional websites</li>
-                                    <li>Staff training on digital literacy skills</li>
-                                    <li>Digital menus</li>
-                                    <li>Local expertise</li>
-                                    </ul>
-                                </div>
-                            </div>          
-                    </section>
-                </div>
-                <div>
-                    <!--Service IMG-->
-                    <section class="container-sections text-margin margin-space" style="margin-top: 20; margin-left: 30;">
-                        <img src="img/what-wedo.png" alt="What we do picture">
-                    </section>
-                </div>
-            </div>
-            
-
-            
-                
-            <div class="column-sections">
-                <div>
-                    
-                    <!--Why Section-->
-                    <section class="container-sections margin-space">
-                        <div class="icons">
-                            <img src="img/rocket-takeoff.svg" alt="shop icon" width="26">
-                        </div>
-                        <h2 class="uppercase bg-scdc"> Why choose us</h2>
-                            <p class="text-margin">
-                                By encouraging small businesses and entrepreneurs, we are supporting economic growth and fostering a vibrant community. <br />
-                                <br />
-                                We are dedicated to developing and preparing your business for success.
-                            </p>
-                    </section>
-                </div>
-
-                <div>
-                    
-                    <!--Where Section-->
-                    <section class="container-sections margin-space">
-                        <div class="icons">
-                            <img src="img/envelope-arrow-up.svg" alt="shop icon" width="26">
-                        </div>
-                        <h2 class="uppercase bg-scdc"> Where do i start?</h2>
-                            <p class="text-margin">
-                                To start the process, simply fill out the virtual interest form below and submit it to info@scdcorp.org.
-                            </p>
-                    </section>
-                </div>
-            </div>
-
-            <!--Next Section-->
-            <section>
-                <div class="column-sections">
-                    <div>
-                        <h1 class="text-white bg-black" style="width: 385px;"> What's next?</h1>
-                    </div>
-                    <div class="text-next">
-                        <p style="text-align: center;">
-                            Click on the Virtual Interest Form below to contact us. We will promptly reach out to schedule a free 30-minute consultation conducted in person or virtually.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="button">
+    <!--Button Section-->
+    <section>
+        <div class="container mt-5 pb-5">
+            <div class="row">
+                <div class="col text-center">
                     <a href="[LINK TO VIRTUAL INTEREST FORM]">
                         <button class="text-white button-scdc">
                             Virtual Interest Form >
                         </button>
                     </a>
                 </div>
-            </section>
+            </div>
+        </div>
+    </section>
 
-            <!-- Testimonial section -->
-            <section class="container-testimonial margin-space">
-                <div class="column-sections">
-                    <div>
-                        <img src="img/partnership.png" alt="partnership picture">
-                    </div>
-                    <div class="vertical-center">
-                        <p class="text-testimonial">
-                            “Their dedication and genuine passion for our growth makes them stand out. If you’re searching for a partner that delivers and truly understands, SCDC is the way to go!”
-                        </p>
-                        <p style= "font-size: 18px; text-align: right; margin-right: 20px;"> -NewStart Housing Corporation </p>
-                    </div>
+    <!-- Sponsor section -->
+    <section>
+        <h2 class="fw-medium fs-4 my-5 text-center"> Our Sponsors</h2>
+            <div class="container">
+                <div class="row justify-content-center align-items-center my-3">
+                    <div class="col"><img src="img/verizon.png" alt="Verizon Logo"></div>
+                    <div class="col"><img src="img/so-cal-gas.png" alt="Southern California Gas"></div> 
+                    <div class="col"><img src="img/wrd.png" alt="Water Replenishment District"></div>
+                    <div class="col"><img src="img/AT&T_logo_2016 1.png" alt="AT&T Logo"></div>
                 </div>
-            </section>
+                <div class="row justify-content-center align-items-center my-3">
+                    <div class="col"><img src="img/City-of-Bell_Logo 1.png" alt="City of bell"></div>
+                    <div class="col"><img src="img/rotary.png" alt="Rotary picture"></div>
+                    <div class="col"><img src="img/edison.png" alt="edison logo"></div>
+                    <div class="col"><img src="img/kiwanis-international-logo 1.png" alt="Kiwannis picture"></div>
+                </div>
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-4"><img src="img/new-start-housing.png" alt="New start housing picture"></div>
+                    <div class="col-4"><img src="img/janice-Hahn.png" alt="Janice Hahn"></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <!-- Sponsor section -->
-            <section>
-                    <h2 class="margin-sponsors sponsor-title"> Our Sponsors</h2>
-                    <div class="sponsor-imgs">
-                        <div class="margin-sponsors container">
-                            <div class="row">
-                                <div class="col-sm"><img src="img/verizon.png" alt="Verizon Logo"></div>
-                                <div class="col-sm"><img src="img/so-cal-gas.png" alt="southern california gas"></div> 
-                                <div class="col-sm"><img src="img/wrd.png" alt="wrd picture"></div>
-                                <div class="col-sm"><img src="img/AT&T_logo_2016 1.png" alt="AT&T Logo"></div>
-                            </div>
-                        </div>
-                        <div class="margin-sponsors container">
-                            <div class="row">
-                                <div class="col-sm"><img src="img/City-of-Bell_Logo 1.png" alt="City of bell"></div>
-                                <div class="col-sm"><img src="img/rotary.png" alt="Rotary picture"></div>
-                                <div class="col-sm"><img src="img/edison.png" alt="edison logo"></div>
-                                <div class="col-sm"><img src="img/kiwanis-international-logo 1.png" alt="Kiwannis picture"></div>
-                            </div>
-                        </div>
-                        <div class="margin-sponsors container">
-                            <div class="row justify-content-between">
-                                <div class="col-md-1 offset-md-1"><img src="img/new-start-housing.png" alt="New start housing picture"></div>
-                                <div class="col-6"><img src="img/janice-Hahn.png" alt="Janice Hahn"></div>
-                            </div>
-                        </div>
-                    </div>
-            </section>
-        </main>
-    </body>
-</html>
+</body></html>
