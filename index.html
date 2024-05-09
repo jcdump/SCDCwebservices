@@ -39,7 +39,7 @@
             font-family: "Roboto Mono", monospace;
         }
 
-        h1 {
+        h1, h3 {
             font-family: "Oswald", Helvetica, Arial, Lucida, sans-serif;
         }
 
@@ -57,11 +57,17 @@
         .uppercase {
             text-transform: uppercase;
         }
+
+        .webpage-border{
+            border-style: solid;
+            border-width: 1px;
+            padding: 0;
+        }
     </style>
 </head>
 
 <body class="text-black">
-    <div class="container my-2" style="border-style: solid; border-width: 1px; padding: 0;">
+    <div class="container my-2 webpage-border">
         <header class="container mt-2 mb-5 p-0">
             <!--Title Section -->
             <!-- JO: Remove all inline CSS -->
@@ -85,7 +91,7 @@
                             We focus on small business
                         </h2>
                         <!-- Showing the icon correctly on smaller devices may take some additional work. A workaround is just to hide the image. -->
-                        <i class="bi bi-shop d-none d-lg-block my-1 me-1" style="font-size: 2rem;"></i>
+                        <i class="bi bi-shop  my-1 me-1 fs-2"></i>
                     </div>
                     <div class="ms-2 me-1">
                         <p>
@@ -110,7 +116,7 @@
                         <h2 class="uppercase bg-scdc fw-medium fs-4 m-1">
                             We're here to help
                         </h2>
-                        <i class="bi bi-person-heart d-none d-lg-block my-1 me-1" style="font-size: 2rem;"></i>
+                        <i class="bi bi-person-heart my-1 me-1 fs-2"></i>
                     </div>
                     <div class="ms-2 me-1">
                         <ul class="fs-6">
@@ -135,7 +141,7 @@
                         <h2 class="uppercase fw-medium fs-4 m-1">
                             What we do
                         </h2>
-                        <i class="bi bi-globe-americas d-none d-lg-block my-1 me-1" style="font-size: 2rem;"></i>
+                        <i class="bi bi-globe-americas my-1 me-1 fs-2"></i>
                     </div>
                     <div class="ms-2 me-1">
                         <p>
@@ -170,7 +176,7 @@
                         <h2 class="uppercase fw-medium fs-4 m-1">
                             Why choose us
                         </h2>
-                        <i class="bi bi-rocket-takeoff d-none d-lg-block my-1 me-1" style="font-size: 2rem;"></i>
+                        <i class="bi bi-rocket-takeoff my-1 me-1 fs-2"></i>
                     </div>
                     <div class="ms-2 me-1">
                         <p>
@@ -187,7 +193,7 @@
                         <h2 class="uppercase fw-medium fs-4 m-1">
                             Where do I start?
                         </h2>
-                        <i class="bi bi-envelope-arrow-up d-none d-lg-block my-1 me-1" style="font-size: 2rem;"></i>
+                        <i class="bi bi-envelope-arrow-up my-1 me-1 fs-2"></i>
                     </div>
                     <div class="ms-2 me-1">
                         <p>
@@ -199,51 +205,44 @@
         </main>
 
         <!--Next Section-->
-        <section>
-            <div class="container mb-5 pb-2">
-                <div class="row mb-5">
-                    <div class="col-lg-4 p-0">
-                        <h1 class="text-white bg-black display-1 fw-medium py-2 ps-3" style="width: 435px"> What's next?</h1>
-                    </div>
-                    <div class="col-lg-8 align-self-center">
-                        <p class="text-center lead fw-normal mt-1 me-3">
-                            Click on the Virtual Interest Form below to contact us. We will promptly reach out to schedule a free 30-minute consultation conducted in person or virtually.
-                        </p>
-                    </div>
+        <section class="container mb-5 pb-2">
+            <div class="row mb-4">
+                <div class="col-lg-5 p-0">
+                    <h3 class="text-white bg-black display-1 fw-medium py-2 ps-3 me-3"> What's next?</h1>
+                </div>
+                <div class="col-lg-7 align-self-center">
+                    <p class="text-center lead fw-normal me-3">
+                        Click on the Virtual Interest Form below to contact us. We will promptly reach out to schedule a free 30-minute consultation conducted in person or virtually.
+                    </p>
                 </div>
             </div>
         </section>
 
         <!--Button Section-->
-        <!--PLEASE ADD LINK TO [LINK TO VIRTUAL INTEREST FORM]-->
-        <section>
-            <div class="container mt-5 pb-4">
-                <div class="row mb-5">
-                    <div class="col text-center">
-                        <a href="[LINK TO VIRTUAL INTEREST FORM]">
-                            <button class="text-white button-scdc">
-                                Virtual Interest Form >
-                            </button>
-                        </a>
-                    </div>
+        <section class="container mt-5 pb-4">
+            <div class="row mb-5">
+                <div class="col text-center">
+                    <a href="https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fforms.gle%2FudEbUY2QD7kwmhe38&data=05%7C02%7Cjarriol6%40calstatela.edu%7C8bde949a54dc443ac8cd08dc48832449%7Cce8a2002448f4f5882b1d86f73e3afdd%7C0%7C0%7C638464975313314148%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=Z8g65zlGMShYtSDmfGeLI2IxcbhxGBHi8EqMNlEMK%2FM%3D&reserved=0" target="_blank">
+                        <button class="text-white button-scdc">
+                            Virtual Interest Form >
+                        </button>
+                    </a>
                 </div>
             </div>
         </section>
 
         <!--Testimonial Section-->
         <!--PLEASE REPLACE WITH A LEGITIMATE TESTIMONIAL/RELATED IMAGE-->
-        <section>
-            <div class="container py-1">
-                <div class="row mx-1 my-5">
-                    <div class="col-lg-5">
-                        <img class="img-fluid" src="img/NSHCpartnership.jpg" alt="partnership picture">
-                    </div>
-                    <div class="col align-self-center">
-                        <p class="fw-normal" style="font-size: 26;">
-                            “Their dedication and genuine passion for our growth makes them stand out. If you’re searching for a partner that delivers and truly understands, SCDC is the way to go!”
-                        </p>
-                        <p class="text-end pe-4 fw-normal" style= "font-size: 18px;"> -NewStart Housing Corporation </p>
-                    </div>
+        <section class="container py-1">
+            <div class="row mx-1 my-5">
+                <div class="col-lg-5">
+                    <img class="img-fluid" src="img/NSHCpartnership.jpg" alt="partnership picture">
+                </div>
+                <div class="col align-self-center">
+                    <p class="fw-normal fs-3">
+                        “Their dedication and genuine passion for our growth makes them stand out. If you’re searching for a partner that delivers and truly understands, SCDC is the way to go!”
+                    </p>
+                    <p class="text-end pe-4 fw-normal fs-5"> -NewStart Housing Corporation </p>
                 </div>
             </div>
         </section>
@@ -269,7 +268,6 @@
                         <div class="col"><img class="img-fluid" src="https://oldtimershousing.files.wordpress.com/2018/10/nestar-housing-logo.jpg" alt="County of Los Angeles Supervisor Janice Hahn"></div>
                     </div>
                 </div>
-            </div>
         </section>
     </div>
 </body></html>
